@@ -10,17 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // 2
-  
+
   let inputBtn = document.getElementById('inputBtn');
   document.body.append(inputBtn);
-  
-  inputBtn.addEventListener('click', ()=> {
+
+  inputBtn.addEventListener('click', () => {
     let inputVal = document.getElementById('text').value;
 
     alert(inputVal);
   })
 
- 
+
 
   // 3
 
@@ -70,8 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let ul = document.getElementById('friendUl');
   document.body.append(Fbtn);
   let friend = ['Luke', 'Lisa', 'Lester', 'Landon', 'Lane', 'Landry', 'Larson', 'Lance', 'Leon', 'Lexi'];
-
-
 
   Fbtn.addEventListener('click', () => {
 

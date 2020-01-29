@@ -25,6 +25,56 @@ $(document).ready(function () {
     },
     function () {
       $(this).css("backgroundColor", "#fff");
-    }
-  )
+    })
+
+  // 4
+
+  $("body").append("<p>Some appended text.</p>");
+
+  $("p").click(function () {
+    var back = ["#ff0000", "blue", "gray"];
+    var rand = back[Math.floor(Math.random() * back.length)];
+    $('p').css('color', rand);
+  });
+
+  // 5
+
+  let span = $('<span>My name</span>');
+  let spDiv = $('<div></div>');
+  let nameBtn = $("<button id='nameBtn'> MyName</button>");
+  $("body").append(nameBtn);
+  $("body").append(spDiv);
+
+  $("#nameBtn").click(function () {
+    $(spDiv).append(span);
+  });
+
+  // 6
+
+  let items = new Array('Luke', 'Lisa', 'Lester', 'Landon', 'Lane', 'Landry', 'Larson', 'Lance', 'Leon', 'Lexi');
+  let ulBtn = $("#ulBtn");
+  
+  $(ulBtn).click(function () {
+
+    $.each(items, function (index, value) {
+      let ul = ("#list");
+      var li = $('<li>').append(value);
+
+      $(ul).append(li);
+
+    });
+    
+
+
+
+  });
+
+
+
+
+
+
+
+
+
 })    

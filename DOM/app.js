@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.append(graph);
 
   graph.addEventListener('click', () => {
-    graph.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    graph.style.color = colors[Math.floor(Math.random() * colors.length)];
     graph.style.width = '10%';
 
   })
